@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+body {
+    background-color: #ffdab9;
+    user-select: none;
+}
+.words {
+    position: relative;
+    text-align: center;
+    font-family: 'Dancing Script';
+    font-size: 35px;
+}
+.a {
+    position: fixed;
+    z-index: 8;
+    bottom: 30vw;
+    left: 20vw;
+    animation: fade 5s linear 1s forwards;
+    opacity: 0;
+}
+.b {
+    position: absolute;
+    z-index:8;
+    top: 120vw;
+    left: 29vw;
+    animation: fade 5s linear 6s forwards;
+    opacity: 0;
+}
+.c {
+    position: absolute;
+    z-index:8;
+    top: 115vw;
+    left: 10vw;
+    animation: fade 5s linear 12s forwards;
+    opacity: 0;
+}
+.d {
+    position: absolute;
+    z-index:8;
+    top: 115vw;
+    left: 16vw;
+    animation: fade 4s linear 17s forwards;
+    opacity: 0;
+}
+.e {
+    position: absolute;
+    z-index:8;
+    top: 115vw;
+    left: 2vw;
+    animation: fade 4s linear 22s forwards;
+    opacity: 0;
+}
+.f {
+    position: absolute;
+    z-index: 8;
+    top: 115vw;
+    left: 35vw;
+    animation: fade 5s linear 27s forwards;
+    opacity: 0;
+}
+@keyframes fade {
+    50% {
+        opacity:1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.body1 {
+    position: fixed;
+    background-color: lightpink;
+    top: 50vw;
+    left: 20vw;
+    width: 60vw;
+    height: 20vh;
+    border: 2px solid brown;
+    border-radius: 50% 50% 50px 50px / 100px 100px 55% 55%;
+    z-index: 2;
+    animation: fade4 3s linear 1s forwards,fade5 4s linear 13s forwards;
+    opacity: 0;
+}
+.top1 {
+    position: fixed;
+    background-color: lightpink;
+    top: 70vw;
+    left: 21.3vw;
+    width: 20vw;
+    height: 8vh;
+    border-bottom: 2px solid brown;
+    border-right: 2px solid brown;
+    border-radius: 0px 0px 100px 100px;
+    z-index: 2;
+}
+.top2 {
+    position: fixed;
+    background-color: lightpink;
+    top: 70vw;
+    left: 38vw;
+    width: 22.5vw;
+    height: 8vh;
+    border-bottom: 2px solid brown;
+    border-right: 2px solid brown;
+    border-radius: 0px 0px 100px 100px;
+    z-index: 2;
+}
+.top3 {
+    position: fixed;
+    background-color: lightpink;
+    top: 70vw;
+    left: 58.5vw;
+    width: 22vw;
+    height: 8vh;
+    border-bottom: 2px solid brown;
+    border-right: 2px solid brown;
+    border-radius: 0px 0px 100px 100px;
+    z-index: 2;
+}
+.base {
+    position: fixed;
+    background-color: transparent;
+    top: 75vw;
+    left: 24vw;
+    width: 40vw;
+    height: 20vh;
+    z-index: 0;
+    border-top: 110px solid #ffebcd;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+}
+.band1 {
+    position: fixed;
+    background-color: transparent;
+    z-index: 1;
+    top: 87vw;
+    left: 27vw;
+    width: 46.5vw;
+    height: 3vh;
+    border-top: 10px solid #87cefa;
+    border-left: 4px solid transparent;
+    border-right: 3px solid transparent;
+}
+.band2 {
+    position: fixed;
+    background-color: transparent;
+    z-index: 1;
+    top: 87vw;
+    left: 27.5vw;
+    width: 47vw;
+    height: 3vh;
+    border-top: 3px solid brown;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+.band3 {
+    position: fixed;
+    background-color: transparent;
+    z-index: 1;
+    top: 89vw;
+    left: 27.5vw;
+    width: 46.5vw;
+    height: 3vh;
+    border-top: 3px solid brown;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+.band4 {
+    position: fixed;
+    background-color: transparent;
+    z-index: 1;
+    top: 89vw;
+    left: 14.8vw;
+    width: 22vw;
+    height: 3vh;
+    border-top: 3px solid brown;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    transform: rotate(75deg);
+}
+.band5 {
+    position: fixed;
+    background-color: transparent;
+    z-index: 1;
+    top: 89vw;
+    left: 64.5vw;
+    width: 22.5vw;
+    height: 3vh;
+    border-top: 3px solid brown;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    transform: rotate(-75deg);
+}
+.band6 {
+    position: fixed;
+    background-color: transparent;
+    z-index: 1;
+    bottom: 50.2vw;
+    left: 30.65vw;
+    width: 39.8vw;
+    height: 3vh;
+    border-top: 3px solid brown;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+.band7 {
+    position: fixed;
+    background-color: transparent;
+    z-index: 0;
+    top: 84vw;
+    left: 45.5vw;
+    width: 30vw;
+    height: 3vh;
+    border-top: 3px solid brown;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    transform: rotate(-90deg);
+}
+.band8 {
+    position: fixed;
+    background-color: transparent;
+    z-index: 0;
+    top: 84vw;
+    left: 24.5vw;
+    width: 30vw;
+    height: 3vh;
+    border-top: 3px solid brown;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    transform: rotate(85deg);
+}
+.bow1 {
+    position: fixed;
+    width: 10vw;
+    height: 5vh;
+    border: 2px solid brown;
+    border-radius: 53% 47% 18% 82% / 51% 87% 13% 49% ;
+    bottom: 64.5vw;
+    left: 50vw;
+    background-color: #87cefa;
+    transform: rotate(140deg);
+    z-index:3;
+}
+.bow2 {
+    position: fixed;
+    width: 10vw;
+    height: 5vh;
+    border: 2px solid brown;
+    border-radius: 58% 42% 20% 80% / 57% 84% 16% 43% ;
+    bottom: 63vw;
+    left: 39vw;
+    background-color: #87cefa;
+    transform: rotate(-45deg);
+    z-index:3;
+}
+.bow3 {
+    position: fixed;
+    width: 3vw;
+    height: 1vh;
+    border: 2px solid brown;
+    border-radius: 50%;
+    bottom: 67vw;
+    left: 48vw;
+    background-color: #87cefa;
+    transform: rotate(90deg);
+    z-index:3;
+}
+.candle {
+    position: fixed;
+    z-index:4;
+    background-color: lightyellow;
+    width: 6vw;
+    height: 15vh;
+    border: 2px solid brown;
+    border-radius: 12px 12px 10px 10px;
+    top: 33vw;
+    left: 45.5vw;
+}
+.part {
+    position: fixed;
+    z-index:4;
+    background-color: black;
+    width: 0.4vw;
+    height: 2vh;
+    border-radius: 12px 12px 10px 10px;
+    top: 30vw;
+    left: 48.5vw;
+}
+.light {
+    position: fixed;
+    z-index: 4;
+    background-color: #ffcb05;
+    top: 26vw;
+    height: 3vh;
+    width: 4vw;
+    border-radius: 0 50% 50% 50%;
+
+
+    transform: rotate(45deg);
+    left: 46.7vw;
+    box-shadow: 0 3px 15px 5px #ffda5e;
+}
+.ice1 {
+    position: fixed;
+    z-index: 5;
+    background-color: white;
+    width: 4vw;
+    height: 2.5vh;
+    border-radius: 100%;
+    top: 68vw;
+    left: 47vw;
+}
+.ice2 {
+    position: fixed;
+    z-index: 5;
+    background-color: white;
+    width: 4vw;
+    height: 2.5vh;
+    border-radius: 100%;
+    top: 70vw;
+    left: 30vw;
+}
+.ice3 {
+    position: fixed;
+    z-index: 5;
+    background-color: white;
+    width: 4vw;
+    height: 2.5vh;
+    border-radius: 100%;
+    top: 56vw;
+    left: 35vw;
+}
+.ice4 {
+    position: fixed;
+    z-index: 5;
+    background-color: white;
+    width: 4vw;
+    height: 2.5vh;
+    border-radius: 100%;
+    top: 70vw;
+    left: 70vw;
+}
+.ice5 {
+    position: fixed;
+    z-index: 5;
+    background-color: white;
+    width: 4vw;
+    height: 2.5vh;
+    border-radius: 100%;
+    top: 56vw;
+    left: 60vw;
+}
+
+
+.body2 {
+    position: fixed;
+    z-index: 0;
+    background-color: lightyellow;
+    top: 76vw;
+    left: 44vw;
+    width: 13vw;
+    height: 10vh;
+    border-radius: 50px 50px 50px 50px;
+}
+.cat {
+    position: fixed;
+    background-color: #f5deb3;
+    top: 50vw;
+    left: 35vw;
+    width: 30vw;
+    height: 30vh;
+    border-radius: 50px 50px 50px 50px;
+    border: 2px solid brown;
+    animation: fade4 3s linear 16s forwards,fade5 4s linear 30s forwards;
+    opacity: 0;
+}
+.legl {
+    position: fixed;
+    width: 3vw;
+    height: 4vh;
+    border-radius: 0px 0px 100px 100px;
+    border-bottom: 3px solid brown;
+    border-left: 3px solid brown;
+    border-right: 3px solid brown;
+    bottom: 55vw;
+    left: 41vw;
+    background-color: #f5deb3;
+    z-index:2;
+}
+.legr {
+    position: fixed;
+    width: 3vw;
+    height: 4vh;
+    border-radius: 0px 0px 100px 100px;
+    border-bottom: 3px solid brown;
+    border-left: 3px solid brown;
+    border-right: 3px solid brown;
+    bottom: 55vw;
+    left: 55vw;
+    background-color: #f5deb3;
+    z-index:2;
+}
+.handl {
+    position: fixed;
+    width: 3vw;
+    height: 4vh;
+    border-radius: 0px 0px 100px 100px;
+    border-bottom: 3px solid brown;
+    border-left: 3px solid brown;
+    border-right: 3px solid brown;
+    top: 72vw;
+    left: 41vw;
+    transform: rotate(-110deg);
+    background-color: #f5deb3;
+    z-index: 2;
+}
+.handr {
+    position: fixed;
+    width: 3vw;
+    height: 4vh;
+    border-radius: 0px 0px 100px 100px;
+    border-bottom: 3px solid brown;
+    border-left: 3px solid brown;
+    border-right: 3px solid brown;
+    top: 72vw;
+    left: 55vw;
+    transform: rotate(110deg);
+    background-color: #f5deb3;
+    z-index: 4;
+}
+.eyesl {
+    position: fixed;
+    width: 3vw;
+    height: 2vh;
+    border-radius: 100px;
+    top: 60vw;
+    left: 42vw;
+    background-color: brown;
+    z-index:7;
+    animation: eyes 2s linear 18s forwards,move 2s linear 19s infinite;
+}
+.eyesr {
+    position: fixed;
+    width: 3vw;
+    height: 2vh;
+    border-radius: 100px;
+    top: 60vw;
+    left: 55vw;
+    background-color: brown;
+    z-index:8;
+    animation: eyes 2s linear 18s forwards,move 2s linear 19s infinite;
+}
+.mouth1 {
+    position: fixed;
+    width: 3vw;
+    height: 4vh;
+    border-radius: 100px;
+    border-bottom: 2px solid brown;
+    top: 58vw;
+    left: 50vw;
+    background-color: #f5deb3;
+    z-index:10;
+}
+.mouth2 {
+    position: fixed;
+    width: 3vw;
+    height: 4vh;
+    border-radius: 100px;
+    border-bottom: 2px solid brown;
+    top: 58vw;
+    left: 47vw;
+    background-color: #f5deb3;
+    z-index:10;
+}
+.mouth {
+    position: fixed;
+    width: 2vw;
+    height: 4vh;
+    border-radius: 0px 0px 100px 100px;
+    border-bottom: 2px solid brown;
+    border-left: 2px solid brown;
+    border-right: 2px solid brown;
+    top: 60vw;
+    left: 48.5vw;
+    background-color: pink;
+    z-index:9;
+}
+.gift {
+    position: fixed;
+    z-index: 1;
+    width: 9vw;
+    height: 5vh;
+    background-color: lightblue;
+    top: 70vw;
+    left: 45.7vw;
+}
+.band9 {
+    position: fixed;
+    z-index: 2;
+    width: 9vw;
+    height: 1vh;
+    background-color: yellow;
+    top: 73.5vw;
+    left: 45.7vw;
+}
+.band10 {
+    position: fixed;
+    z-index: 1;
+    width: 1.5vw;
+    height: 5vh;
+    background-color: yellow;
+    top: 70vw;
+    left: 49.5vw;
+}
+.earr{
+    position: relative;
+    top: -14vw;
+    left:20.5vw; 
+    width: 0; 
+    height: 0;
+    border-left:30px solid transparent;
+    border-right:30px solid transparent;
+    border-bottom:40px solid #ffe4c4;
+    transform: rotate(40deg);
+}
+.earl{
+    position: relative;
+    top: -4vw;
+    left: -5vw; 
+    width: 0; 
+    height: 0;
+    border-left:30px solid transparent;
+    border-right:30px solid transparent;
+    border-bottom:40px solid #ffe4c4;
+    transform: rotate(-40deg);
+}
+.cap{
+    position: relative;
+    top: -31.5vw;
+    left: 10vw; 
+    width: 0; 
+    height: 0;
+    border-left:20px solid transparent;
+    border-right:20px solid transparent;
+    border-bottom:50px solid purple;
+}
+.cap1 {
+    position: fixed;
+    width: 3vw;
+    height: 2vh;
+    border-radius: 100px;
+    top: 37vw;
+    left: 48.7vw;
+    background-color: white;
+    z-index:7;
+}
+.hairl1 {
+    position: fixed;
+    z-index: 2;
+    width: 7vw;
+    height: 0.5vh;
+    background-color: black;
+    top: 62vw;
+    left: 31vw;
+    transform: rotate(10deg);
+}
+.hairl2 {
+    position: fixed;
+    z-index: 2;
+    width: 7vw;
+    height: 0.5vh;
+    background-color: black;
+    top: 66vw;
+    left: 31vw;
+    transform: rotate(-10deg);
+}
+.hairr1 {
+    position: fixed;
+    z-index: 2;
+    width: 7vw;
+    height: 0.5vh;
+    background-color: black;
+    top: 66vw;
+    left: 63vw;
+    transform: rotate(10deg);
+}
+.hairr2 {
+    position: fixed;
+    z-index: 2;
+    width: 7vw;
+    height: 0.5vh;
+    background-color: black;
+    top: 62vw;
+    left: 63vw;
+    transform: rotate(-10deg);
+}
+.cap2 {
+    position: fixed;
+    background-color: transparent;
+    z-index: 1;
+    top: 43vw;
+    left: 47.2vw;
+    width: 5vw;
+    height: 1vh;
+    border-bottom: 5px solid yellow;
+    border-left: 2.5px solid transparent;
+    border-right: 2.5px solid transparent;
+}
+.iearl {
+    position: relative;
+    top: -33vw;
+    left: -0.2vw; 
+    width: 0; 
+    height: 0;
+    border-left:13px solid transparent;
+    border-right:13px solid transparent;
+    border-bottom:20px solid brown;
+    transform: rotate(-40deg);
+}
+.iearr {
+    position: relative;
+    top: -37.8vw;
+    left: 24vw; 
+    width: 0; 
+    height: 0;
+    border-left:13px solid transparent;
+    border-right:13px solid transparent;
+    border-bottom:20px solid brown;
+    transform: rotate(40deg);
+}
+@keyframes eyes{
+    100%{
+        border-top: 4px solid brown;
+        background-color: #f5deb3;
+    border-radius: 50px 50px 0 0;
+    }
+}
+@keyframes move {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+ }}
+
+@keyframes fade4 {
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fade5 {
+    0%,50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+        
+    </style>
+    <head>
+        <title>Happy Birthday</title>
+    </head>
+    <body>
+      <div class="words">
+        <div class="a">Hello there! stranger</div>
+        <div class="b">Keep Smiling bhaiya</div>
+        <div class="c">Happy Birthday Ronak </div>
+        <div class="d">I am Birthday Kitty!</div>
+        <div class="e">Here is a Gift for me of course!</div>
+        <div class="f">Be Happy never feel blue!!</div>
+      </div>
+        <div class="body1">
+            <div class="top1"></div>
+            <div class="top2"></div>
+            <div class="top3"></div>
+            <div class="base"></div>
+            <div class="band1"></div>
+            <div class="band2"></div>
+            <div class="band3"></div>
+            <div class="band4"></div>
+            <div class="band5"></div>
+            <div class="band6"></div>
+            <div class="band7"></div>
+            <div class="band8"></div>
+            <div class="bow1"></div>
+            <div class="bow2"></div>
+            <div class="bow3"></div>
+            <div class="candle">
+                <div class="part"></div>
+                <div class="light"></div>
+            </div>
+            <div class="ice1"></div>
+            <div class="ice2"></div>
+            <div class="ice3"></div>
+            <div class="ice4"></div>
+            <div class="ice5"></div>
+            <div class="ice6"></div>
+          </div>
+          <div class="cat">
+            <div class="eyesl"></div>
+            <div class="eyesr"></div>
+            <div class="mouth"></div>
+            <div class="mouth1"></div>
+            <div class="mouth2"></div>
+            <div class="legl"></div>
+            <div class="legr"></div>
+            <div class="handl"></div>
+            <div class="handr"></div>
+            <div class="gift"></div>
+            <div class="band9"></div>
+            <div class="band10"></div>
+            <div class="earl"></div>
+            <div class="earr"></div>
+            <div class="cap"></div>
+            <div class="cap1"></div>
+            <div class="body2"></div>
+            <div class="hairl1"></div>
+            <div class="hairl2"></div>
+            <div class="hairr1"></div>
+            <div class="hairr2"></div>
+            <div class="cap2"></div>
+            <div class="iearl"></div>
+            <div class="iearr"></div>
+          </div>
+    </body>
+</html>
