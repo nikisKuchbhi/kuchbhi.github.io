@@ -1,0 +1,1698 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Nyakotey">
+
+    <link rel="stylesheet" href="bollywood.css">
+
+    <title>Class Dance Scene</title>
+
+</head>
+
+
+<style>
+
+   
+
+   
+
+    *{
+
+    margin:0;padding:0;
+
+    border:none;
+
+    box-sizing:border-box;
+
+    position:relative;
+
+}
+
+*::before,*::after{
+
+    content:'';
+
+    position:absolute;
+
+    box-sizing:border-box;
+
+}
+
+body{
+
+    user-select: none;
+
+    overflow: hidden;
+
+}
+
+main{
+
+    margin-top:15vmin;
+
+    width: 100vw; height: 100vh;
+
+}
+
+section{
+
+    width:100%;
+
+    height: 65vmin; /* remove if not fi */
+
+}
+
+section:nth-child(1){
+
+}
+
+section:nth-child(2){
+
+    top:-40vmin; left: 8%;
+
+    z-index:2;
+
+}
+
+section:nth-child(3){
+
+    position: absolute;
+
+    top:36%;
+
+    z-index:3;
+
+}
+
+/* dancers */
+
+.human{
+
+    --black:#222;
+
+    --skin:#fca873;
+
+    width: 25vmin; height: 60vmin;
+
+}
+
+.m1{
+
+    --shirt:#4997ce;
+
+    --trousers:#354558;
+
+}
+
+.m2{
+
+    --shirt:#5ae157;
+
+    --trousers:#358c3b;
+
+}
+
+.m3{
+
+    --shirt:#c049ce;
+
+    --trousers:#583556;
+
+}
+
+.m-sk{
+
+    --shirt:#e47e00;
+
+    --trousers:#fc5a38;
+
+}
+
+.woman{
+
+    --trousers: #00000003 ;
+
+    --hair:#3c1116 ;
+
+}
+
+.w1{
+
+    --blouse: #588db2;
+
+    --sleeve: #2c799fb3;
+
+    --skirt: #354558;
+
+}
+
+.w2{
+
+    --blouse: #5ae157;
+
+    --sleeve: #5ae157a6;
+
+    --skirt: #358c3b;
+
+}
+
+.w3{
+
+    --blouse: #c049ce;
+
+    --sleeve: #c049ce9c;
+
+    --skirt: #583556;
+
+}
+
+.w-pc{
+
+    --blouse: #e61a51;
+
+    --sleeve: #fca873;
+
+    --hair:#3c1116 ;
+
+    --skirt: rgb(237 20 61 / 95%);
+
+}
+
+.head{left:28%;}
+
+.man .hair{
+
+    position:absolute;
+
+    left:4%;top:-30%;
+
+    width: 7.8vmin; height: 3vmin;
+
+    background: var(--black);
+
+    border-radius: 70% 70% 0 0/ 5vmin;
+
+}
+
+.man .hair::after{
+
+    top:70%; left: -1%;
+
+    width: 7.9vmin; height: 4vmin;
+
+    background: var(--black);
+
+    border-radius: 10%;
+
+}
+
+.tete{
+
+    background-color: var(--skin);
+
+    width: 7.3vmin; height: 8vmin;
+
+    border-radius: 10% 10% 4vmin 4vmin / 3vmin 3vmin 50% 50%;
+
+    left:5%;top:-0.9vmin;
+
+}
+
+.sunglass{
+
+    top:1vmin;left:4%;
+
+    animation: glass 0.5s infinite alternate;
+
+    z-index: 1;
+
+}
+
+.sunglass *{background: var(--black);}
+
+.s1,.s2{
+
+    width: 3.5vmin; height: 3.5vmin;
+
+    border-radius: 20% 20% 50% 50%;
+
+    position: absolute;
+
+}
+
+.s2{left:17%;top:0;}
+
+.bar{
+
+    width: 3vmin; height: .6vmin;
+
+    left:10%;top:10%;
+
+}
+
+.mouth{
+
+    background: rgb(73, 56, 43);
+
+    width: 3vmin; height: .6vmin;
+
+    position: absolute;
+
+    bottom:20%;left:30%;
+
+}
+
+.upper-body{left:20%;}
+
+.lower-body{left:18%;}
+
+.shirt{
+
+    background: var(--shirt);
+
+    width: 15vmin; height: 20vmin;
+
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+
+}
+
+.shirt:before{
+
+    background: white;
+
+    width: 15vmin; height: 20vmin;
+
+    clip-path: polygon(30% 0, 70% 0, 60% 100%, 40% 100%);
+
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+
+    border-top: 1px solid rgba(0,0,0,0.1);
+
+}
+
+#flag{
+
+    position: absolute;
+
+    right:10%; top:10%;
+
+    font-size: .6rem;
+
+}
+
+.man .upper-body::after{
+
+    background: #464561;
+
+     width: 14vmin; height: 4vmin;
+
+    left: 2%;bottom:-15%;
+
+    z-index: 1;
+
+}
+
+.man .lower-body::before{
+
+    background: #20333c;
+
+    width: 5vmin;
+
+    height: 4.5vmin;
+
+    border: 1vmin solid #2a5461;
+
+    border-radius: 50%;
+
+    left:21%;
+
+    top:-1.2vmin;
+
+    z-index: 1;
+
+}
+
+.m-sk .upper-body::after{background: #db4a2b;}
+
+.m-sk .lower-body::before{background: #c1810a;border-color: #b34747;}
+
+.man .arm{
+
+    position: absolute;
+
+    top:-2.5%;
+
+    z-index:21;
+
+}
+
+.man .arm *{ background-color: var(--shirt);}
+
+.man .left-arm{left:-20%;}
+
+.man .right-arm{right:20%;}
+
+.man .upper-arm{
+
+    width: 4vmin; height: 15vmin;
+
+}
+
+.man .left-arm .upper-arm{
+
+    left: 20%;
+
+    transform: rotate(15deg);  
+
+    border-radius:5vmin 0 3vmin 3vmin;
+
+}
+
+.man .right-arm .upper-arm{
+
+    right:20%;
+
+    transform: rotate(-15deg);
+
+    border-radius:0 5vmin 3vmin 3vmin;
+
+}
+
+.forearm{
+
+    top:-2vmin;
+
+    width: 3.7vmin; height: 10vmin;
+
+    border-radius: 0 0 1.4vmin 1.4vmin /0 0 50% 50%;
+
+    transform-origin: top;
+
+    z-index: -1;
+
+}
+
+.left-arm .forearm{animation: lhand 0.5s 0.5s infinite alternate; }
+
+.right-arm .forearm{animation: rhand 0.5s ease infinite alternate;}
+
+.man .left-arm .forearm{
+
+    left: -15%;
+
+    transform: rotate(-0deg);  
+
+}
+
+.man .right-arm .forearm{
+
+    right: -20%;
+
+    transform: rotate(0deg);
+
+    height:10vmin;
+
+    border-radius: 0 0 1.4vmin 1.4vmin /0 0 50% 50%;
+
+}
+
+.human .hand{
+
+    position: absolute;
+
+    background: var(--skin);
+
+    width: 3.5vmin; height: 3.5vmin;
+
+    border-radius: 20% 20% 50% 50%;
+
+    bottom: -20%;
+
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+
+}
+
+.leg{position: absolute;}
+
+.leg *{background: var(--trousers);}
+
+.left-leg{left:18%;}
+
+.right-leg{right:27%;}
+
+.thigh{
+
+    width: 6.5vmin; height: 13vmin;
+
+    left:-50%;
+
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+
+}
+
+.left-leg .thigh{animation: lthigh 0.5s infinite alternate;}
+
+.right-leg .thigh{animation: rthigh 0.5s 0.25s infinite alternate;}
+
+.crus{
+
+    width: 5.8vmin; height: 15vmin;
+
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+
+    top:-0.8vmin;
+
+/*     transform-origin: top; */
+
+}
+
+.left-leg .crus{
+
+    left:-45%;
+
+    animation: lcrus 0.5s 0.25s infinite alternate;
+
+}
+
+.right-leg .crus{
+
+    right:45%;
+
+    animation: rcrus 0.5s 0.5s infinite alternate;
+
+}
+
+.man .shoe{
+
+    background: var(--black);
+
+    width: 8vmin; height: 4vmin;
+
+    position: absolute;
+
+}
+
+.left-leg .shoe{
+
+    border-radius: 55% 0 10% 10%;
+
+    right:62%; bottom:-11%;
+
+    animation: lshoe 0.5s infinite alternate;
+
+}
+
+.right-leg .shoe{
+
+    border-radius: 0 55% 10% 10%;
+
+    right:18%; bottom:-11%;
+
+    animation: rshoe 0.5s 0.5s infinite alternate;
+
+}
+
+.nyakotey{ position: absolute;}
+
+.woman .head{perspective: 1.9vmin; perspective-origin: 20% 50%;}
+
+.woman .hair{
+
+    position: absolute;
+
+    top:-90%;left: -8%;
+
+    background-color: var(--hair);
+
+    width: 14vmin; height: 25vmin;
+
+    border-radius: 18vmin 18vmin 15vmin 15vmin;
+
+    z-index: -1;
+
+    transform: rotateX(3deg);
+
+}
+
+.woman .eye{
+
+    width: 1.1vmin; height: 2vmin;
+
+    background: var(--black);
+
+    border-radius: 50%;
+
+    position:absolute;
+
+    top:23%;
+
+}
+
+.woman .left-eye{left:20%;}
+
+.woman .right-eye{right:19%;}
+
+.woman .eye::before{
+
+    width: 2vmin; height: 2vmin;
+
+    border-radius: 50%;
+
+    border-top: 2px solid var(--black);
+
+    top: -50%;
+
+}
+
+.woman .left-eye::before{left:-50%;}
+
+.woman .right-eye::before{right:-40%;}
+
+.woman .lower-body::before{ /* skirt */
+
+    left: -23%;top: -2vmin;
+
+    background: var(--skirt);
+
+    width: 27vmin; height: 38vmin;
+
+    border-radius: 10vmin  10vmin 10vmin 15vmin /90% 90% 5% 5%;
+
+    z-index:-1;
+
+}
+
+.woman .upper-body{
+
+    -webkit-perspective: 2vmin;
+
+    perspective: 2vmin;
+
+    left:0%;bottom: -13%;
+
+    transform: scale(1.1);
+
+}
+
+.woman .lower-body{bottom:-20%;z-index:-4;}
+
+.woman .mouth{
+
+    background: white;
+
+    width: 2.9vmin;height: 1.5vmin;
+
+    border: 0.35vmin solid #f90c0c;
+
+    border-radius: 0 0 1vmin 1vmin;
+
+}
+
+.woman .chest{
+
+    background-color: var(--skin);
+
+    top:-8vmin;left:32%;
+
+    width: 9vmin; height: 8vmin;
+
+    transform: rotateX(5deg);
+
+    border-radius: 90% 90% 0 0 / 1vmin 1vmin 0 0;
+
+    z-index: -2;
+
+}
+
+.woman .stripe{
+
+    position: absolute;
+
+    top:-77%;
+
+    background: var(--blouse);
+
+    width: 1vmin; height: 6vmin;
+
+    z-index: 1;
+
+    animation: dressLights 9s ease infinite;
+
+}
+
+.woman .left-stripe{
+
+    left: 33%;
+
+    transform: rotate(5deg);
+
+}
+
+.woman .right-stripe{
+
+    right:33%;
+
+    transform: rotate(-5deg);
+
+}
+
+.woman .blouse{  
+
+    position: absolute;
+
+    left:30%;bottom: -55%;
+
+    background: linear-gradient(var(--blouse) 45%, var(--skin) 30%);
+
+    width: 10vmin; height: 13vmin;
+
+    border-radius: 3vmin  3vmin 2% 2%;
+
+    transform: rotateX(-4deg);
+
+    z-index:-1;
+
+}
+
+.woman .bb{
+
+    background-color: var(--blouse);
+
+    width: 6vmin; height: 5vmin;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    top:-7%;
+
+    z-index: 1;    
+
+    box-shadow: 0 2px 2px rgba(0,0,0,0.03);
+
+}
+
+.woman .bb-left{left:-3%;}
+
+.woman .bb-right{right:-3%;}
+
+.woman .left-arm, .woman .right-arm{
+
+    position: absolute;
+
+    top:-80%;
+
+}
+
+.woman .left-arm{left:15%;}
+
+.woman .right-arm{right:15%;}
+
+.woman .upper-arm{
+
+    background-color: var(--skin);
+
+    width: 3vmin; height: 12vmin;
+
+    z-index: -2;
+
+}
+
+.woman .upper-arm::before{
+
+    background-color: var(--sleeve);
+
+    width: 3vmin; height: 12vmin;
+
+    z-index: -2;
+
+}
+
+.woman .right-arm .upper-arm::before{ /* sleeve */
+
+    border-radius:0vmin 10vmin 3vmin 3vmin;
+
+}
+
+.woman .left-arm .upper-arm::before{
+
+    border-radius:10vmin 0vmin 3vmin 3vmin;
+
+}
+
+.woman .left-arm .upper-arm{
+
+    left: 20%;
+
+    transform: rotate(15deg);  
+
+    border-radius:10vmin 0vmin 3vmin 3vmin;
+
+}
+
+.woman .right-arm .upper-arm{
+
+    right:20%;
+
+    transform: rotate(-15deg);
+
+    border-radius:0 10vmin 3vmin 3vmin;
+
+}
+
+.woman .forearm{
+
+    top:-1.7vmin;
+
+    background: linear-gradient(var(--skin) 73%, var(--skirt) 25%);
+
+/*     background: red; */
+
+    width: 2.8vmin; height: 8vmin;
+
+    border-radius: 0 0 1.4vmin 1.4vmin /0 0 50% 50%;
+
+    z-index: -1;
+
+}
+
+.woman .left-arm .forearm{
+
+    left: -25%;
+
+/*     transform: rotate(-15deg); */
+
+}
+
+.woman .right-arm .forearm{
+
+    right:-28%;
+
+    height:8vmin;
+
+    border-radius: 0 0 1.4vmin 1.4vmin /0 0 50% 50%;
+
+}
+
+.woman .hand{width: 3vmin; height: 3vmin;}
+
+.woman .thigh{height:13vmin;z-index:-1;}
+
+.woman .crus{height:20vmin;}
+
+.woman .right-leg{right:30%;}
+
+
+/* dancers instances */
+
+.man:not(.m1), .woman:not(.w1){
+
+    position: absolute;
+
+    top:0;
+
+}
+
+.m1,.w1{
+
+    left: 10%;
+
+    transform: translateX(-15%);
+
+}
+
+.m2,.w2{
+
+    left:50%;
+
+    transform: translateX(-50%);
+
+}
+
+.m3,.w3{
+
+    left:90%;
+
+    transform: translateX(-90%);
+
+}
+
+
+.m-sk{
+
+    left:30%;
+
+    transform: translateX(-30%);
+
+}
+
+.w-pc{
+
+    left:70%;
+
+    transform: translateX(-70%);
+
+}
+
+img{
+
+    position: absolute;
+
+    top: -10%; left: 19%;
+
+    z-index:15;
+
+    width: 14vmin;
+
+}
+
+.w-pc img{
+
+    width: 15vmin;
+
+    left: 22%;top: -11%;
+
+}
+
+
+
+/* animations */
+
+@keyframes glass {
+
+    from{left:-0%;}
+
+    to{left:8%;}  
+
+}
+
+@keyframes lhand {
+
+    to{transform:  rotate(-60deg);}
+
+}
+
+@keyframes rhand {
+
+    to{transform:  rotate(60deg);}
+
+}
+
+@keyframes lthigh{
+
+    to{transform:  rotate(10deg);}
+
+}
+
+@keyframes rthigh{
+
+    to{transform:  rotate(-10deg);}
+
+}
+
+@keyframes lcrus {
+
+    to{left:-60%;}
+
+}
+
+@keyframes rcrus {
+
+    to{right:25%;}
+
+}
+
+@keyframes lshoe{
+
+    to{right:80%;}
+
+}
+
+@keyframes rshoe{
+
+    to{right:-10%;}
+
+}
+
+@keyframes bg-color{
+
+    0%{background-color:rgba(255, 255, 255, 0.8);}
+
+    20%{background-color:rgba(27, 231, 214, 0.8);}
+
+    40%{background-color:rgba(52, 231, 27, 0.8);}
+
+    60%{background-color:rgb(255 230 0 / 0.7);}
+
+    80%{background-color:rgba(231, 27, 37, 0.6);}
+
+    100%{background-color:white}
+
+}
+
+.btn{
+
+    background:rgba(0,0,0, 0.7);
+
+    color:white;
+
+    padding:1rem;
+
+}
+
+.gif{
+
+    background: url("https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif");
+
+    background-size: cover;
+
+}
+
+main{display: none;}
+
+aside{
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+
+}
+
+   
+
+   
+
+   
+
+   
+
+</style>
+
+
+<body>
+
+    <main>
+
+        <section>
+
+            <div class="human man m1">
+
+                <div class="head">
+
+                    <div class="hair"></div>
+
+                    <div class="sunglass">
+
+                        <div class="s1"></div>
+
+                        <div class="bar"></div>
+
+                        <div class="s2"></div>
+
+                    </div>
+
+                    <div class="tete"><div class="mouth"></div></div>
+
+                </div>
+
+                <div class="upper-body">
+
+                    <div class="arm left-arm">
+
+                        <div class="upper-arm"></div>
+
+                        <div class="forearm"><div class="hand"></div></div>
+
+                    </div>
+
+                    <div class="arm right-arm">
+
+                        <div class="upper-arm"></div>
+
+                        <div class="forearm"><div class="hand"></div></div>
+
+                    </div>
+
+                    <div class="shirt">
+
+                        <span id="flag">🇮🇳</span>
+
+                    </div>
+
+                </div>
+
+                <div class="lower-body">
+
+                    <div class="leg left-leg">
+
+                        <div class="thigh"></div>
+
+                        <div class="crus"></div>
+
+                        <div class="shoe"></div>
+
+                    </div>
+
+                    <div class="leg right-leg">
+
+                        <div class="thigh"></div>
+
+                        <div class="crus"></div>
+
+                        <div class="shoe"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="human man m2">
+
+                <img src="https://ibb.co/nR3vFG4" alt="rohit">
+
+                <div class="head">
+
+                    <div class="hair"></div>
+
+                    <div class="sunglass">
+
+                        <div class="s1"></div>
+
+                        <div class="bar"></div>
+
+                        <div class="s2"></div>
+
+                    </div>
+
+                    <div class="tete"><div class="mouth"></div></div>
+
+                </div>
+
+                <div class="upper-body">
+
+                    <div class="arm left-arm">
+
+                        <div class="upper-arm"></div>
+
+                        <div class="forearm"><div class="hand"></div></div>
+
+                    </div>
+
+                    <div class="arm right-arm">
+
+                        <div class="upper-arm"></div>
+
+                        <div class="forearm"><div class="hand"></div></div>
+
+                    </div>
+
+                    <div class="shirt">
+
+                        <span id="flag">🇮🇳</span>
+
+                    </div>
+
+                </div>
+
+                <div class="lower-body">
+
+                    <div class="leg left-leg">
+
+                        <div class="thigh"></div>
+
+                        <div class="crus"></div>
+
+                        <div class="shoe"></div>
+
+                    </div>
+
+                    <div class="leg right-leg">
+
+                        <div class="thigh"></div>
+
+                        <div class="crus"></div>
+
+                        <div class="shoe"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="human man m3">
+
+                <div class="head">
+
+                    <div class="hair"></div>
+
+                    <div class="sunglass">
+
+                        <div class="s1"></div>
+
+                        <div class="bar"></div>
+
+                        <div class="s2"></div>
+
+                    </div>
+
+                    <div class="tete"><div class="mouth"></div></div>
+
+                </div>
+
+                <div class="upper-body">
+
+                    <div class="arm left-arm">
+
+                        <div class="upper-arm"></div>
+
+                        <div class="forearm"><div class="hand"></div></div>
+
+                    </div>
+
+                    <div class="arm right-arm">
+
+                        <div class="upper-arm"></div>
+
+                        <div class="forearm"><div class="hand"></div></div>
+
+                    </div>
+
+                    <div class="shirt">
+
+                        <span id="flag">🇮🇳</span>
+
+                    </div>
+
+                </div>
+
+                <div class="lower-body">
+
+                    <div class="leg left-leg">
+
+                        <div class="thigh"></div>
+
+                        <div class="crus"></div>
+
+                        <div class="shoe"></div>
+
+                    </div>
+
+                    <div class="leg right-leg">
+
+                        <div class="thigh"></div>
+
+                        <div class="crus"></div>
+
+                        <div class="shoe"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <div class="human woman w1">
+
+                <div class="head">
+
+                    <div class="hair"></div>
+
+                    <div class="tete">
+
+                        <div class="eye left-eye"></div>
+
+                        <div class="eye right-eye"></div>
+
+                        <div class="mouth"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="upper-body">
+
+                    <div class="stripe left-stripe"></div>
+
+                    <div class="stripe right-stripe"></div>
+
+                    <div class="chest"></div>
+
+                    <div class="blouse">
+
+                        <div class="bb bb-left"></div>
+
+                        <div class="bb bb-right"></div>
+
+                    </div>  
+
+                    <div class="arm right-arm">
+
+                        <div class="upper-arm"></div>
+
+                        <div class="forearm">
+
+                            <div class="hand"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="arm left-arm">
+
+                        <div class="upper-arm"></div>
+
+                        <div class="forearm"><div class="hand"></div></div>
+
+                    </div>
+
+                </div>
+
+                <div class="lower-body">
+
+                    <div class="leg left-leg">
+
+                        <div class="thigh"></div>
+
+                        <div class="crus"></div>
+
+                        <div class="shoe"></div>
+
+                    </div>
+
+                    <div class="leg right-leg">
+
+                        <div class="thigh"></div>
+
+                        <div class="crus"></div>
+
+                        <div class="shoe"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="human woman w2">
+
+                <div class="head">
+
+                    <div class="hair"></div>
+
+                    <div class="tete">
+
+                        <div class="eye left-eye"></div>
+
+                        <div class="eye right-eye"></div>
+
+                        <div class="mouth"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="upper-body">
+
+                    <div class="stripe left-stripe"></div>
+
+                    <div class="stripe right-stripe"></div>
+
+                    <div class="chest"></div>
+
+                    <div class="blouse">
+
+                        <div class="bb bb-left"></div>
+
+                        <div class="bb bb-right"></div>
+
+                    </div>  
+
+                    <div class="arm right-arm">
+
+                        <div class="upper-arm"></div>
+
+                        <div class="forearm">
+
+                            <div class="hand"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="arm left-arm">
+
+                        <div class="upper-arm"></div>
+
+                        <div class="forearm"><div class="hand"></div></div>
+
+                    </div>
+
+                </div>
+
+                <div class="lower-body">
+
+                    <div class="leg left-leg">
+
+                        <div class="thigh"></div>
+
+                        <div class="crus"></div>
+
+                        <div class="shoe"></div>
+
+                    </div>
+
+                    <div class="leg right-leg">
+
+                        <div class="thigh"></div>
+
+                        <div class="crus"></div>
+
+                        <div class="shoe"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="human woman w3">
+
+                <img src="https://ibb.co/7ydydSn" alt="nania">
+
+                <div class="head">
+
+                    <div class="hair"></div>
+
+                    <div class="tete">
+
+                        <div class="eye left-eye"></div>
+
+                        <div class="eye right-eye"></div>
+
+                        <div class="mouth"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="upper-body">
+
+                    <div class="stripe left-stripe"></div>
+
+                    <div class="stripe right-stripe"></div>
+
+                    <div class="chest"></div>
+
+                    <div class="blouse">
+
+                        <div class="bb bb-left"></div>
+
+                        <div class="bb bb-right"></div>
+
+                    </div>  
+
+                    <div class="arm right-arm">
+
+                        <div class="upper-arm"></div>
+
+                        <div class="forearm">
+
+                            <div class="hand"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="arm left-arm">
+
+                        <div class="upper-arm"></div>
+
+                        <div class="forearm"><div class="hand"></div></div>
+
+                    </div>
+
+                </div>
+
+                <div class="lower-body">
+
+                    <div class="leg left-leg">
+
+                        <div class="thigh"></div>
+
+                        <div class="crus"></div>
+
+                        <div class="shoe"></div>
+
+                    </div>
+
+                    <div class="leg right-leg">
+
+                        <div class="thigh"></div>
+
+                        <div class="crus"></div>
+
+                        <div class="shoe"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <div class="human man m-sk">
+
+                <img src="https://ibb.co/6Yv3qCR" alt="shahrukh-khan">
+
+                <div class="head">
+
+                    <div class="hair"></div>
+
+                    <div class="sunglass">
+
+                        <div class="s1"></div>
+
+                        <div class="bar"></div>
+
+                        <div class="s2"></div>
+
+                    </div>
+
+                    <div class="tete"><div class="mouth"></div></div>
+
+                </div>
+
+                <div class="upper-body">
+
+                    <div class="arm left-arm">
+
+                        <div class="upper-arm"></div>
+
+                        <div class="forearm"><div class="hand"></div></div>
+
+                    </div>
+
+                    <div class="arm right-arm">
+
+                        <div class="upper-arm"></div>
+
+                        <div class="forearm"><div class="hand"></div></div>
+
+                    </div>
+
+                    <div class="shirt">
+
+                        <span id="flag">🇮🇳</span>
+
+                    </div>
+
+                </div>
+
+                <div class="lower-body">
+
+                    <div class="leg left-leg">
+
+                        <div class="thigh"></div>
+
+                        <div class="crus"></div>
+
+                        <div class="shoe"></div>
+
+                    </div>
+
+                    <div class="leg right-leg">
+
+                        <div class="thigh"></div>
+
+                        <div class="crus"></div>
+
+                        <div class="shoe"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="human woman w1 w-pc">
+
+                <img src="https://ibb.co/HBBnBFx" alt="Priyanka chopra" >
+
+                <div class="head">
+
+                    <div class="hair"></div>
+
+                    <div class="tete">
+
+                        <div class="eye left-eye"></div>
+
+                        <div class="eye right-eye"></div>
+
+                        <div class="mouth"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="upper-body">
+
+                    <div class="stripe left-stripe"></div>
+
+                    <div class="stripe right-stripe"></div>
+
+                    <div class="chest"></div>
+
+                    <div class="blouse">
+
+                        <div class="bb bb-left"></div>
+
+                        <div class="bb bb-right"></div>
+
+                    </div>  
+
+                    <div class="arm right-arm">
+
+                        <div class="upper-arm"></div>
+
+                        <div class="forearm">
+
+                            <div class="hand"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="arm left-arm">
+
+                        <div class="upper-arm"></div>
+
+                        <div class="forearm"><div class="hand"></div></div>
+
+                    </div>
+
+                </div>
+
+                <div class="lower-body">
+
+                    <div class="leg left-leg">
+
+                        <div class="thigh"></div>
+
+                        <div class="crus"></div>
+
+                        <div class="shoe"></div>
+
+                    </div>
+
+                    <div class="leg right-leg">
+
+                        <div class="thigh"></div>
+
+                        <div class="crus"></div>
+
+                        <div class="shoe"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <aside><div class="loader">Loading...</div></aside>
+
+    <audio src="https://www.dropbox.com/s/rb9ifq73r70nf9h/dance.mp3?dl=1" loop>Oops something's wrong</audio>
+
+
+    <script>
+
+        //variables
+
+        const aud = document.getElementsByTagName("audio")[0];
+
+        const main = document.getElementsByTagName("main")[0];
+
+        const load = document.getElementsByClassName("loader")[0];
+
+        const bo = document.body;
+
+        // functions
+
+        const play = () => {
+
+            bo.style.animation = "bg-color 10s ease 5s infinite";
+
+            main.style.display = "block";
+
+            bo.className = "gif";
+
+            load.parentNode.style.display="none";
+
+            aud.play();
+
+        }
+
+        const showtime = () => {
+
+            load.innerHTML = "Click to start Animation";
+
+            load.className = "loader btn Nyakotey";
+
+            load.addEventListener('click',play);
+
+        }
+
+        //showtime
+
+        aud.addEventListener("canplaythrough", showtime);
+
+    </script>
+
+</body>
+
+</html>
