@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+
+<style>
+
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url('https://i.pinimg.com/originals/89/51/05/895105a12b9ad0618e55ae58fd836a80.jpg');
+    background-size: cover;
+    background-position: top;
+    overflow: hidden;
+}
+
+.gift {
+    position: fixed;
+    top: -60vw;
+    left:25vw;
+    width: 50vw;
+    height: 60vw;
+    
+    transition: top 5s;
+    z-index: 5;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    position: fixed;
+    top: 22vh;
+    left: 10vw;
+    width: 80vw;
+    height: 60vh;
+    text-align: center;
+    padding: 10px;
+    color: lightblue;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: none;
+}
+
+.btn {
+    width: 70vw;
+    height: 8vh;
+    position: fixed;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #5FE31F;
+    color: red;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    animation: pulse 1s linear infinite;
+    opacity: 0;
+    display: none;
+    transition: opacity 5s;
+}
+
+@keyframes pulse {
+    50% {transform: translateX(-50%) scale(1.2)}
+    to {transform: translateX(-50%) scale(1)}
+}
+
+@keyframes frame {
+    from {border: 10px solid #ff0000}
+    20% {border: 10px solid #00ff00}
+    40% {border: 10px solid #EF19D4}
+    60% {border: 10px solid #EFEA19}
+    80% {border: 10px solid #19EFEF}
+    to {border: 10px solid #ff0000}
+}
+
+
+
+#d1 {
+    width: 30vw;
+    height: 38vw;
+    position: fixed;
+    right: 10px;
+    display: none;
+}
+
+    </style>
+
+
+
+    <script>
+
+
+
+
+window.onerror = function(e){
+        return true;
+    }
+
+window.onload = function(){
+    
+const btn = document.querySelector('.btn')
+const gift = document.querySelector('.gift');
+listener1 = btn.addEventListener('click', ShowGift)
+
+function ShowGift(){
+
+    let audio = new Audio();
+    audio.src = 'https://w1.musify.club/track/dl/14172600/dj-bobo-happy-birthday-radio-edit.mp3';
+    audio.play();
+    
+    gift.querySelector('img').src = 'https://img-fotki.yandex.ru/get/4126/181450557.62/0_a3d5c_b2d95a41_orig.jpg';
+    
+    gift.style.top = '20vh';
+    text.style.color = 'transparent';
+    setTimeout(function(){
+        btn.style.background = 'red';
+        btn.style.color = 'lightblue';
+        btn.innerText = 'I HAVE SMTH ELSE FOR YOU😀'
+    btn.removeEventListener('click',ShowGift);
+    btn.addEventListener('click', ShowWishes);
+
+    }, 3000)
+    
+}
+    
+let text1 = 'Palak@Today is your Birthday!🎊🎉😀@uhh!! thanks yaad dilane ke liye varna hum toh bhul hi gaya tha@Do you want to receive a special gift?😋🎉🎁';
+
+let text2 = 'Happy Birthday Palak!@I wish you all the best in your life! May all your dreams come true! Ek website apni marji se freee meh design karwa lena jao! I wish you always reach your goals! Stay safe, strong & happy!!!@🎊🎉🎈 HAPPY BIRTHDAY 🎈🎉🎊';
+
+let count1 = 0;
+let count2 = 0;
+let flag = false;
+let flag1 = false;
+const text = document.querySelector('.text');
+
+function Write_Text() {
+    
+    if (count1 < text1.length) {
+        text.innerHTML += text1[count1];
+        count1 +=1;
+        if (text1[count1] == '@'){
+            text.innerHTML += '<br /><br />';
+            count1++;
+        }
+    }
+    
+    else if (flag){
+        text.innerHTML += text2[count2];
+        count2 += 1;
+        if (text2[count2] == '@'){
+            text.innerHTML += '<br /><br />';
+            count2 += 1;
+        }
+        
+        if (count2 == text2.length) {
+            clearInterval(interval);
+        }
+    }
+    
+    if (count1 == text1.length && !flag1) {
+        btn.style.display = 'flex';
+        setTimeout(function(){
+            flag1 = true;
+            btn.style.opacity = 1;
+        },200)
+        
+    }
+    
+}
+
+function ShowWishes(){
+    
+    text.style.color = 'yellow';
+    text.style.fontSize = '1.15em';
+    gift.style.top = '65vh';
+    text.innerHTML = '';
+    flag=true;
+    btn.removeEventListener('click', ShowWishes);
+    text.style.border = '10px solid yellow'
+    text.style.animation = 'frame 3s linear infinite';
+    
+    setTimeout(function(){
+        let d1 = document.querySelector('#d1');
+        let d2 = document.querySelector('#d2');
+    
+        d1.querySelector('img').src = 'https://i.gifer.com/origin/64/64abe69f78d6620fb9a2ddb096d542d3.gif';
+        d1.style.display = 'block';
+        btn.style.opacity = 0;
+    },2000)
+}
+
+
+
+
+setTimeout(function(){
+    interval = setInterval(Write_Text, 80);
+},1000)
+
+    
+    
+    
+}
+
+        </script>
+
+
+
+
+
+
+    <body>
+        
+        <div class='gift'>
+            <img />
+        </div>
+        <div class='text'></div>
+        <div class='btn'>YEAH💃🏻 I WANT to aur koi option bhi kaha hain🤗</div>
+        <div class='frame'></div>
+        
+        <div id='d1'><img/></div>
+        <div id='d2'><img/></div>
+    </body>
+</html>
