@@ -1,0 +1,54 @@
+[
+    { "msgs": ["Hey!! KKRH??？"], "msgInputSpeed": 80 },
+    {
+        "msgs": ["Ajj ka din yaad hain??？"],
+        "msgInputSpeed": 80,
+        "triggerNextAction": {
+            "type": "userInput",
+            "options": {
+                "resolveKeyTexts": ["Valentine's Day", "Lover", "Anniversary"],
+                "rejectKeyTexts": [],
+                "rejectHitTexts": [
+                    "Just to remind you, today is February 14, 2022",
+                    "I can't answer this, I'm going to be angry。",
+                    "Well, let me tell you because you didn't mean it, today is Valentine's Day～"
+                ]
+            }
+        }
+    },
+    {
+        "msgs": ["Know what I'm thinking right now?"],
+        "msgInputSpeed": 80,
+        "triggerNextAction": {
+            "type": "userInput",
+            "options": {
+                "resolveKeyTexts": ["miss me", "miss girlfriend"],
+                "rejectKeyTexts": ["In no mood"],
+                "rejectHitTexts": [
+                    "Guess wrong, give you a hint, it's a person～",
+                    "You must have guessed wrong on purpose..."
+                ]
+            }
+        }
+    },
+    {
+        "msgs": ["Of course I’m thinking about playing games now”, “Of course I’m thinking about you now~"],
+        "msgInputSpeed": 80
+    },
+    { "msgs": ["What do you not believe?"], "msgInputSpeed": 100 },
+    { "msgs": ["Oh, haven't you received any gifts yet?"], "msgInputSpeed": 140 },
+    { "msgs": ["And no one came! (Gradually unhappy 😭）"], "msgInputSpeed": 180 },
+    { "msgs": ["Don't, don't, don't be angry, I'm prepared."], "msgInputSpeed": 80 },
+    { "msgs": ["The gift is already on the way, and people will arrive too."], "msgInputSpeed": 80 },
+    {
+        "msgs": ["And there are many things I want to say to you, I wrote a letter to you。"],
+        "msgInputSpeed": 80
+    },
+    {
+        "msgs": ["<letter src='options/preview/letter.json'/>"],
+        "triggerNextAction": { "type": "componentClose" }
+    },
+    { "msgs": ["How is your literary talent? Yes or no?"] },
+    { "msgs": ["<img src='options/preview/感动到哭.png'/>"] },
+    { "msgs": ["Demonstration complete..."], "msgInputSpeed": 80 }
+]
